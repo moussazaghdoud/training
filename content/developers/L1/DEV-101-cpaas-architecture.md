@@ -24,6 +24,8 @@ After completing this module you will be able to:
 
 ## 1. What Is Rainbow CPaaS?
 
+![video: Rainbow CPaaS — Developer Quick Start](rainbow-cpaas-quickstart)
+
 ### 1.1 CPaaS Defined
 
 CPaaS stands for Communication Platform as a Service. It is a cloud-based platform that allows developers to add real-time communication features — voice, video, messaging, presence — into their own applications using APIs and SDKs, without building the underlying communication infrastructure from scratch.
@@ -37,7 +39,9 @@ Think of Rainbow as having two faces:
 - **UCaaS face:** The Rainbow application — a finished product that end users interact with directly for messaging, calls, and meetings. This is what most users see.
 - **CPaaS face:** The Rainbow API and SDK layer — a set of building blocks that developers use to embed communication into other applications. This is what developers build with.
 
-Both faces share the same backend infrastructure. A message sent through the Rainbow desktop client is delivered by the same system that handles a message sent through the REST API. A call initiated by the SDK uses the same WebRTC media servers as a call made from the mobile app. This means:
+Both faces share the same backend infrastructure. A message sent through the Rainbow desktop client is delivered by the same system that handles a message sent through the REST API.
+
+> **Key Concept:** UCaaS and CPaaS share the same backend. This means any application you build with the API can interoperate seamlessly with native Rainbow client users — your bot appears as a regular contact, your custom app can join existing Bubbles, and messages flow through the same pipeline. A call initiated by the SDK uses the same WebRTC media servers as a call made from the mobile app. This means:
 
 - Applications built on the CPaaS layer can interoperate seamlessly with native Rainbow users.
 - A bot you build with the Node.js SDK appears as a regular contact in the Rainbow directory.
@@ -63,6 +67,8 @@ Understanding the Rainbow architecture helps you make sound design decisions whe
 ### 2.1 High-Level Architecture
 
 The Rainbow platform consists of four major layers:
+
+![diagram: Rainbow CPaaS End-to-End Architecture](rainbow-cpaas-architecture)
 
 ```
 +-----------------------------------------------------------+
@@ -250,6 +256,8 @@ Before writing any code, you must register your application on the Rainbow devel
 - **Application ID (appId):** A unique identifier for your application. This is not secret and can be included in client-side code.
 - **Application Secret (appSecret):** A secret key used to authenticate your application. This MUST be kept confidential and stored securely on the server side. Never embed the appSecret in client-side JavaScript or mobile application code.
 
+> **Warning:** Exposing your appSecret in client-side code (browser JavaScript, mobile app bundles) is a critical security vulnerability. Attackers can extract the secret and impersonate your application. Always keep the appSecret on your backend server and proxy API calls through it.
+
 ### 4.2 User Token vs. Application Token
 
 Rainbow supports two authentication flows depending on your application type:
@@ -288,6 +296,8 @@ This is the recommended flow for web applications where users log in interactive
 | Refresh Token   | 30 days         | Re-authenticate with credentials      |
 
 Your application must handle token expiration gracefully. When an API call returns `401 Unauthorized`, attempt to refresh the access token. If the refresh token has also expired, the user must re-authenticate.
+
+> **Tip:** Implement a token refresh interceptor in your HTTP client. Check token expiry before each request and refresh proactively — this avoids failed API calls and provides a smoother user experience than waiting for a 401 response.
 
 ---
 
@@ -389,6 +399,8 @@ Beyond per-endpoint rate limits, Rainbow has a fair usage policy that applies to
 - Conference duration and participant limits based on subscription tier.
 
 Exceeding fair usage thresholds may result in throttling or account review. Always check the current fair usage policy documentation on the developer portal.
+
+> **Info:** The sandbox environment at hub.openrainbow.com has lower rate limits than production. If you hit rate limits during development, it may be the sandbox ceiling — not a bug in your code. Check the sandbox-specific limits in the developer portal documentation.
 
 ---
 

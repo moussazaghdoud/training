@@ -29,7 +29,11 @@ By the end of this module, you will be able to:
 
 ### Section 1: The Customer Lifecycle Model
 
+![video: The Rainbow Customer Journey — Lifecycle Overview](rainbow-customer-lifecycle)
+
 Customer Success for Rainbow follows a four-phase lifecycle model. Each phase has distinct objectives, metrics, and Customer Success activities. Your role is to guide every customer through these phases, ensuring they reach full value realization and renew with confidence.
+
+![diagram: Four-Phase Customer Lifecycle — Onboarding to Renewal](customer-lifecycle-diagram)
 
 ```
 ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
@@ -41,6 +45,8 @@ Customer Success for Rainbow follows a four-phase lifecycle model. Each phase ha
  User activation      Feature depth      Tier upgrade        NPS score
  Admin portal setup   Support tickets    Additional sites    Contract value
 ```
+
+> **Key Concept:** The customer lifecycle is not a linear process — it is a continuous loop. Renewal conversations begin the day after signing, not 30 days before expiry. Every interaction across all four phases either strengthens or weakens the renewal outcome.
 
 The lifecycle is not strictly linear. Expansion can happen during the adoption phase if the customer sees immediate value. Churn risk can appear at any phase. A renewal conversation actually begins the day after the contract is signed — not 30 days before it expires.
 
@@ -89,6 +95,8 @@ Onboarding is the most critical phase. Research across SaaS industries consisten
 5. **Champion identification.** Identify 3-5 "champions" within the customer's organization — early adopters who are enthusiastic about Rainbow and can help drive adoption among their peers. Provide them with additional training and make them your internal allies.
 
 6. **First-value checkpoint.** Monitor user activation metrics. If activation rate is below 50% by Day 14, escalate: schedule an additional training session, identify barriers (technical issues, resistance to change, competing tools), and address them directly.
+
+> **Warning:** Do not wait until Week 4 to check activation metrics. If fewer than 30% of users have logged in by Day 7, the onboarding is at risk. Proactive intervention at Day 7 is far more effective than reactive recovery at Day 30.
 
 **Week 3-4: Stabilization**
 
@@ -181,6 +189,8 @@ Create a simple health score for each customer based on adoption metrics:
 | User activation | Above 80% | 60-80% | Below 60% |
 
 A customer with two or more "Red" indicators requires immediate attention: schedule a call, identify the root cause, and build a recovery plan.
+
+> **Tip:** Build a simple dashboard or spreadsheet that tracks health scores for all your accounts. Review it weekly. The goal is to catch Yellow-to-Red transitions before they become churn conversations — early intervention has a 3x higher success rate than late-stage recovery.
 
 ---
 
@@ -313,6 +323,8 @@ A well-structured Rainbow QBR follows this agenda (45-60 minutes total):
 - **Listen more than you talk.** The QBR is your best opportunity to learn what the customer cares about. Ask questions. Take notes. Follow up.
 - **End with a joint action plan.** Both you and the customer should leave with specific commitments for the next quarter.
 - **Invite the right people.** Push for executive attendance at least every other QBR. If only the IT admin attends, Rainbow risks being seen as a technical tool rather than a strategic platform.
+
+> **Info:** The Rainbow Admin Portal provides exportable usage analytics that you can pull directly into your QBR slides. Navigate to Analytics > Usage Reports and export the date range covering the quarter. This gives you DAU/MAU trends, messaging volume, conference counts, and feature activation data in a ready-to-present format.
 
 ---
 

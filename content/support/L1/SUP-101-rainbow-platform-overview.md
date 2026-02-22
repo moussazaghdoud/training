@@ -23,6 +23,8 @@ By the end of this module, you will be able to:
 
 ## 1. What Is Rainbow?
 
+![video: Introduction to Rainbow — Platform Overview](rainbow-platform-intro)
+
 ### 1.1 Product Identity
 
 Rainbow is the cloud communications platform developed and operated by **Alcatel-Lucent Enterprise (ALE)**. It combines Unified Communications as a Service (UCaaS) with Communications Platform as a Service (CPaaS) in a single offering. This dual identity is central to understanding Rainbow's market position:
@@ -32,13 +34,19 @@ Rainbow is the cloud communications platform developed and operated by **Alcatel
 
 This combination means that Rainbow serves two audiences simultaneously: **business users** who need day-to-day collaboration tools, and **developers or integrators** who need programmable communications infrastructure.
 
+> **Key Concept:** Rainbow's dual identity as both UCaaS and CPaaS is its defining characteristic. Every support interaction should start with understanding which "face" of Rainbow the customer is using — the ready-made collaboration app or the programmable API layer.
+
 ### 1.2 The Alcatel-Lucent Enterprise Context
 
 Alcatel-Lucent Enterprise has a heritage spanning more than a century in enterprise networking and telephony. Rainbow builds on that heritage by extending traditional PBX and on-premises telephony systems into the cloud. Unlike pure-play cloud vendors, ALE designed Rainbow to coexist with existing telephony infrastructure — particularly the OmniPCX Enterprise (OXE) and OmniPCX Office (OXO) PBX families — rather than requiring a forklift replacement.
 
 This hybrid philosophy is one of Rainbow's most important selling points: customers can adopt cloud communications at their own pace without abandoning investments in on-premises equipment.
 
+> **Tip:** When a customer asks "Do I have to replace my phone system?", the answer is always no. Rainbow is designed to work alongside existing PBX infrastructure — this is one of the strongest messages you can deliver.
+
 ### 1.3 Platform Architecture at a Glance
+
+![diagram: Rainbow Global Architecture — Microservices & Data Centers](rainbow-architecture-overview)
 
 Rainbow runs on a globally distributed microservices architecture. The platform is hosted across **22 data centers** located in multiple geographic regions, including Europe, North America, Asia-Pacific, and the Middle East. This geographic distribution serves two purposes:
 
@@ -46,6 +54,8 @@ Rainbow runs on a globally distributed microservices architecture. The platform 
 2. **Data sovereignty**: Organizations in regulated industries or jurisdictions with strict data residency requirements can ensure that their data remains within a specific geographic boundary.
 
 The platform achieves a published uptime of **99.87%**, backed by service-level agreements that vary by subscription tier.
+
+> **Info:** The 22 data centers are strategically distributed to cover major regulatory regions. When a customer asks about data residency, always confirm which data center their company is assigned to via the admin portal before making any commitments.
 
 ---
 
@@ -130,6 +140,8 @@ Rainbow Hub is Rainbow's CPaaS-focused tier, targeted at **developers and system
 - Sandbox environment for development and testing
 
 When supporting Rainbow Hub users, the nature of the issues changes significantly: you will encounter API errors, authentication token problems, SDK version incompatibilities, and webhook delivery failures rather than typical end-user UX questions.
+
+> **Warning:** Never share tier-specific troubleshooting steps with a customer on a different tier. For example, advising an Essential-tier user to check PBX settings will cause confusion — PBX features are not available on that tier. Always verify the customer's subscription level first.
 
 ### 2.6 Tier Comparison Summary
 
