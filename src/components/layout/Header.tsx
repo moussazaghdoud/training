@@ -33,9 +33,7 @@ export function Header() {
 
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">R</span>
-            </div>
+            <img src="/rblogo.png" alt="Rainbow" className="w-9 h-9 rounded-xl object-contain" />
             <div className="hidden sm:block">
               <h1 className="text-lg font-display font-bold text-slate-900 leading-tight">
                 Rainbow Academy
