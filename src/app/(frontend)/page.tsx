@@ -58,7 +58,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center gap-2 text-slate-300">
               <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">15</span>
+                <span className="text-white font-bold text-sm">21</span>
               </div>
               <span>Certifications</span>
             </div>

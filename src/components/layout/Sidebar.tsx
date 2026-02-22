@@ -24,6 +24,8 @@ const tracks = [
   { label: 'Executives', href: '/tracks/executives', color: 'bg-purple-500', moduleIds: ['EXEC-101','EXEC-102','EXEC-103','EXEC-104','EXEC-201','EXEC-202','EXEC-203','EXEC-204','EXEC-301','EXEC-302','EXEC-303','EXEC-401','EXEC-402','EXEC-403'] },
   { label: 'Partners', href: '/tracks/partners', color: 'bg-orange-500', moduleIds: ['PTR-101','PTR-102','PTR-103','PTR-104','PTR-201','PTR-202','PTR-203','PTR-204','PTR-205','PTR-301','PTR-302','PTR-303','PTR-304','PTR-305','PTR-401','PTR-402','PTR-403','PTR-404','PTR-405'] },
   { label: 'Developers', href: '/tracks/developers', color: 'bg-gray-500', moduleIds: ['DEV-101','DEV-102','DEV-103','DEV-104','DEV-201','DEV-202','DEV-203','DEV-204','DEV-205','DEV-301','DEV-302','DEV-303','DEV-304','DEV-401','DEV-402','DEV-403','DEV-404','DEV-405','DEV-406','DEV-407'] },
+  { label: 'Sales', href: '/tracks/sales', color: 'bg-pink-500', moduleIds: ['SLS-101','SLS-102','SLS-103','SLS-104','SLS-201','SLS-202','SLS-203','SLS-204','SLS-205','SLS-301','SLS-302','SLS-303','SLS-304','SLS-305','SLS-401','SLS-402','SLS-403','SLS-404'] },
+  { label: 'Administrators', href: '/tracks/administrators', color: 'bg-teal-500', moduleIds: ['ADM-101','ADM-102','ADM-103','ADM-104','ADM-201','ADM-202','ADM-203','ADM-204','ADM-205','ADM-301','ADM-302','ADM-303','ADM-304','ADM-305','ADM-401','ADM-402','ADM-403','ADM-404'] },
 ]
 
 const secondaryNav = [
@@ -56,7 +58,7 @@ const secondaryNav = [
   },
 ]
 
-const TOTAL_MODULES = 93
+const TOTAL_MODULES = 129
 
 export function Sidebar() {
   const { totalCompleted, getTrackProgress, progress } = useProgress()

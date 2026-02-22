@@ -41,6 +41,8 @@ export const Tracks: CollectionConfig = {
         { label: 'Executives / CEOs', value: 'executive' },
         { label: 'Partners / Resellers', value: 'partner' },
         { label: 'Developers', value: 'developer' },
+        { label: 'Sales Professionals', value: 'sales' },
+        { label: 'Rainbow Administrators', value: 'administrator' },
       ],
     },
     {

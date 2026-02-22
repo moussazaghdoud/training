@@ -41,9 +41,9 @@ const certifications = tracksData.map((track) => ({
   slug: track.slug,
   color: track.color,
   certs: [
-    { tier: 'silver', name: `Rainbow Certified ${track.persona === 'support' ? 'Support Agent' : track.persona === 'customer-success' ? 'CS Associate' : track.persona === 'executive' ? 'Executive' : track.persona === 'partner' ? 'Partner' : 'Developer'}` },
-    { tier: 'gold', name: `Rainbow ${track.persona === 'support' ? 'Support Expert' : track.persona === 'customer-success' ? 'CS Expert' : track.persona === 'executive' ? 'Executive Strategist' : track.persona === 'partner' ? 'Partner Expert' : 'Developer Expert'}` },
-    { tier: 'platinum', name: `Rainbow ${track.persona === 'support' ? 'Support Champion' : track.persona === 'customer-success' ? 'CS Champion' : track.persona === 'executive' ? 'Executive Champion' : track.persona === 'partner' ? 'Partner Champion' : 'Developer Champion'}` },
+    { tier: 'silver', name: `Rainbow Certified ${track.persona === 'support' ? 'Support Agent' : track.persona === 'customer-success' ? 'CS Associate' : track.persona === 'executive' ? 'Executive' : track.persona === 'partner' ? 'Partner' : track.persona === 'sales' ? 'Sales Associate' : track.persona === 'administrator' ? 'Administrator' : 'Developer'}` },
+    { tier: 'gold', name: `Rainbow ${track.persona === 'support' ? 'Support Expert' : track.persona === 'customer-success' ? 'CS Expert' : track.persona === 'executive' ? 'Executive Strategist' : track.persona === 'partner' ? 'Partner Expert' : track.persona === 'sales' ? 'Sales Expert' : track.persona === 'administrator' ? 'Administrator Expert' : 'Developer Expert'}` },
+    { tier: 'platinum', name: `Rainbow ${track.persona === 'support' ? 'Support Champion' : track.persona === 'customer-success' ? 'CS Champion' : track.persona === 'executive' ? 'Executive Champion' : track.persona === 'partner' ? 'Partner Champion' : track.persona === 'sales' ? 'Sales Champion' : track.persona === 'administrator' ? 'Administrator Champion' : 'Developer Champion'}` },
   ],
 }))
 

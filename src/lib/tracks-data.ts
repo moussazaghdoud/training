@@ -270,4 +270,106 @@ export const tracksData = [
       },
     ],
   },
+  {
+    slug: 'sales',
+    name: 'Sales Professionals',
+    persona: 'sales',
+    color: '#E91E63',
+    icon: 'target',
+    goal: 'Position Rainbow with confidence, deliver compelling demos, and close deals',
+    shortDescription: 'Master Rainbow positioning, competitive differentiation, demo delivery, and deal closing strategies for direct sales success.',
+    totalDuration: 15,
+    moduleCount: 18,
+    levels: [
+      {
+        number: 1, name: 'Foundation', slug: 'foundation', duration: 3,
+        modules: [
+          { id: 'SLS-101', title: 'Rainbow Market Position & Value Proposition', duration: 45, contentTypes: ['VID', 'INF', 'QIZ'], primaryType: 'conceptual', objectives: ['Articulate Rainbow positioning in the UCaaS/CPaaS market', 'Explain the ALE heritage and hybrid cloud differentiators', 'Identify the 5 subscription tiers and ideal customer profiles', 'Position data sovereignty as a unique selling point'] },
+          { id: 'SLS-102', title: 'Know Your Buyer: Personas & Pain Points', duration: 45, contentTypes: ['VID', 'CAS', 'QIZ'], primaryType: 'case-based', objectives: ['Map the typical buying committee roles and motivations', 'Identify top pain points for IT directors, CIOs, and LOB owners', 'Match Rainbow capabilities to specific buyer pain points', 'Recognize buying signals and readiness indicators'] },
+          { id: 'SLS-103', title: 'Rainbow Product Walkthrough for Sales', duration: 45, contentTypes: ['VID', 'DEM', 'INT'], primaryType: 'demo-driven', objectives: ['Navigate desktop, web, and mobile clients confidently', 'Demonstrate messaging, Bubbles, voice/video, and conferencing', 'Highlight AI features as differentiators', 'Present the admin portal from an ease-of-management perspective'] },
+          { id: 'SLS-104', title: 'Subscription Tiers, Pricing & Deal Mechanics', duration: 30, contentTypes: ['VID', 'REF', 'QIZ'], primaryType: 'reference', objectives: ['Explain pricing and feature sets for all tiers', 'Describe the mix-and-match licensing model', 'Navigate deal registration and quoting processes', 'Identify upsell paths from entry to enterprise'] },
+        ],
+      },
+      {
+        number: 2, name: 'Practitioner', slug: 'practitioner', duration: 5,
+        modules: [
+          { id: 'SLS-201', title: 'Competitive Battlecards in Action', duration: 60, contentTypes: ['VID', 'SCN', 'REF'], primaryType: 'scenario', objectives: ['Counter Microsoft Teams, Zoom, RingCentral, and 8x8 objections', 'Execute the "why not just Teams?" handling framework', 'Position Rainbow + Teams coexistence as strategic advantage', 'Adapt competitive messaging for different verticals'] },
+          { id: 'SLS-202', title: 'The Rainbow Demo That Sells', duration: 60, contentTypes: ['DEM', 'SCN', 'LAB'], primaryType: 'demo-driven', objectives: ['Deliver a structured 20-minute discovery-based demo', 'Customize demo flow based on prospect pain points', 'Demonstrate CRM connectors with business impact storytelling', 'Handle live objections during demo without losing momentum'] },
+          { id: 'SLS-203', title: 'PBX Overlay: Selling Modernization Without Disruption', duration: 45, contentTypes: ['VID', 'DEM', 'CAS'], primaryType: 'demo-driven', objectives: ['Explain PBX overlay value for OmniPCX and third-party PBX prospects', 'Position Rainbow as investment protection not rip-and-replace', 'Build a phased modernization narrative that reduces risk', 'Reference case studies of successful PBX overlay deployments'] },
+          { id: 'SLS-204', title: 'Security, Compliance & Data Sovereignty as Deal Winners', duration: 45, contentTypes: ['VID', 'CAS', 'REF'], primaryType: 'case-based', objectives: ['Present ISO 27001, HDS, and GDPR certifications confidently', 'Position 22 data centers and sovereignty as deal-winning differentiators', 'Navigate security questionnaires and RFP security sections', 'Sell to regulated industries using compliance as a lever'] },
+          { id: 'SLS-205', title: 'Discovery, Qualification & Pipeline Management', duration: 60, contentTypes: ['VID', 'SCN', 'QIZ'], primaryType: 'scenario', objectives: ['Execute structured discovery using MEDDIC adapted for Rainbow', 'Qualify opportunities based on deployment readiness and PBX landscape', 'Build a value-driven pipeline with accurate deal stages', 'Identify and engage economic buyers vs. technical evaluators'] },
+        ],
+      },
+      {
+        number: 3, name: 'Expert', slug: 'expert', duration: 5,
+        modules: [
+          { id: 'SLS-301', title: 'Vertical Selling: Tailored Pitches by Industry', duration: 60, contentTypes: ['VID', 'DEM', 'CAS'], primaryType: 'demo-driven', objectives: ['Deliver industry-specific demos for hospitality, healthcare, education, and government', 'Use vertical case studies and ROI data', 'Address industry-specific compliance requirements', 'Identify vertical buying cycles and triggers'] },
+          { id: 'SLS-302', title: 'Enterprise & Multi-Site Deal Strategy', duration: 60, contentTypes: ['VID', 'SCN', 'CAS'], primaryType: 'scenario', objectives: ['Navigate complex enterprise sales cycles with multiple stakeholders', 'Design multi-site deployment proposals with phased rollouts', 'Structure volume licensing with mix-and-match tier strategies', 'Build executive-level business cases with TCO and ROI models'] },
+          { id: 'SLS-303', title: 'CPaaS & Developer Platform Selling', duration: 45, contentTypes: ['VID', 'DEM', 'INF'], primaryType: 'demo-driven', objectives: ['Position Rainbow Hub as a revenue-generating integration platform', 'Demonstrate API capabilities and webhook automation to technical buyers', 'Identify CPaaS use cases that unlock new budget', 'Differentiate Rainbow CPaaS from Twilio and Vonage'] },
+          { id: 'SLS-304', title: 'AI Features as Deal Accelerators', duration: 45, contentTypes: ['VID', 'DEM', 'CAS'], primaryType: 'demo-driven', objectives: ['Demo transcription, meeting summaries, and real-time translation', 'Quantify AI-driven ROI for prospects', 'Position AI roadmap as a reason to buy now', 'Handle "we can get AI from Microsoft" objections'] },
+          { id: 'SLS-305', title: 'Negotiation & Closing Techniques for Rainbow Deals', duration: 60, contentTypes: ['VID', 'SCN', 'QIZ'], primaryType: 'scenario', objectives: ['Apply negotiation frameworks to Rainbow deal situations', 'Handle pricing objections and defend value over discounts', 'Structure proposals that accelerate procurement review', 'Execute closing plays for different deal types'] },
+        ],
+      },
+      {
+        number: 4, name: 'Champion', slug: 'champion', duration: 3,
+        modules: [
+          { id: 'SLS-401', title: 'Building Repeatable Sales Plays', duration: 60, contentTypes: ['VID', 'CAS', 'LAB'], primaryType: 'case-based', objectives: ['Design sales plays for top 5 deal scenarios', 'Create reusable discovery templates and demo scripts', 'Build a personal playbook of winning deal patterns', 'Coach junior sales reps using play-based methodology'] },
+          { id: 'SLS-402', title: 'Executive Engagement & C-Level Selling', duration: 45, contentTypes: ['VID', 'SCN', 'CAS'], primaryType: 'scenario', objectives: ['Craft board-level ROI narratives with financial modeling', 'Build and maintain executive relationships beyond initial sale', 'Present digital transformation vision to CIOs and CFOs', 'Navigate executive objections about vendor consolidation'] },
+          { id: 'SLS-403', title: 'Account Strategy & Customer Expansion', duration: 45, contentTypes: ['VID', 'SCN', 'REF'], primaryType: 'scenario', objectives: ['Design land-and-expand strategies for named accounts', 'Identify expansion triggers from usage patterns', 'Build multi-year account plans with growth targets', 'Transition accounts smoothly from sales to customer success'] },
+          { id: 'SLS-404', title: 'Certification Assessment', duration: 30, contentTypes: ['ASM'], primaryType: 'assessment', objectives: ['Demonstrate comprehensive Rainbow sales expertise', 'Pass the Rainbow Sales Champion certification exam'] },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'administrators',
+    name: 'Rainbow Administrators',
+    persona: 'administrator',
+    color: '#00897B',
+    icon: 'settings',
+    goal: 'Configure, manage, and optimize Rainbow for your organization',
+    shortDescription: 'Master the Rainbow admin portal to provision users, configure telephony, manage security, and optimize your deployment.',
+    totalDuration: 15,
+    moduleCount: 18,
+    levels: [
+      {
+        number: 1, name: 'Foundation', slug: 'foundation', duration: 3,
+        modules: [
+          { id: 'ADM-101', title: 'Rainbow Admin Portal Overview', duration: 45, contentTypes: ['VID', 'INT', 'QIZ'], primaryType: 'guided', objectives: ['Navigate the admin portal dashboard and key configuration areas', 'Understand the relationship between company, users, and subscriptions', 'Identify admin roles and permission levels', 'Locate system status, notifications, and support resources'] },
+          { id: 'ADM-102', title: 'Company Setup & Organization Structure', duration: 30, contentTypes: ['VID', 'INT', 'REF'], primaryType: 'guided', objectives: ['Configure company profile, branding, and contact information', 'Set up multi-site structures and site hierarchies', 'Define organizational units and departments', 'Configure company-wide default settings and policies'] },
+          { id: 'ADM-103', title: 'User Provisioning & License Assignment', duration: 45, contentTypes: ['VID', 'LAB', 'QIZ'], primaryType: 'hands-on', objectives: ['Create individual user accounts with appropriate profiles', 'Perform bulk user provisioning via CSV import', 'Assign and manage subscription licenses per user', 'Configure user settings: caller ID, voicemail, device associations'] },
+          { id: 'ADM-104', title: 'Understanding Rainbow Architecture', duration: 30, contentTypes: ['VID', 'INF', 'REF'], primaryType: 'conceptual', objectives: ['Understand public cloud, Edge, and hybrid deployment models', 'Identify which configuration options depend on deployment model', 'Map the relationship between Rainbow cloud and on-premises PBX', 'Understand data flow, client connectivity, and service dependencies'] },
+        ],
+      },
+      {
+        number: 2, name: 'Practitioner', slug: 'practitioner', duration: 5,
+        modules: [
+          { id: 'ADM-201', title: 'Telephony Configuration & PBX Integration', duration: 60, contentTypes: ['VID', 'LAB', 'QIZ'], primaryType: 'hands-on', objectives: ['Configure SIP trunking and PSTN connectivity settings', 'Set up Rainbow PBX overlay with OmniPCX Enterprise or Office', 'Configure hunt groups, IVR menus, and call routing rules', 'Manage DDI number assignments and call forwarding'] },
+          { id: 'ADM-202', title: 'Directory Management & Federation', duration: 45, contentTypes: ['VID', 'LAB', 'QIZ'], primaryType: 'hands-on', objectives: ['Configure LDAP/Active Directory synchronization', 'Manage external contacts and shared company directories', 'Set up federation rules for inter-company communication', 'Troubleshoot directory sync failures and duplicate resolution'] },
+          { id: 'ADM-203', title: 'Security Policies & Access Control', duration: 60, contentTypes: ['VID', 'LAB', 'REF'], primaryType: 'hands-on', objectives: ['Configure password policies, session timeouts, and MFA', 'Set up IP restriction rules and geo-blocking policies', 'Define data retention and content archiving rules', 'Configure SSO integration (SAML 2.0 / OpenID Connect)'] },
+          { id: 'ADM-204', title: 'Connector Administration', duration: 45, contentTypes: ['VID', 'LAB', 'SCN'], primaryType: 'hands-on', objectives: ['Install and configure CRM connectors for Salesforce and Dynamics', 'Set up the Microsoft Teams connector and coexistence policies', 'Configure connector permissions, user mappings, and sync', 'Troubleshoot common connector authentication and sync issues'] },
+          { id: 'ADM-205', title: 'Monitoring, Logs & Usage Analytics', duration: 60, contentTypes: ['VID', 'INT', 'LAB'], primaryType: 'hands-on', objectives: ['Navigate the admin analytics dashboard for call quality metrics', 'Access and interpret system logs for troubleshooting', 'Generate usage reports for license optimization', 'Set up alerts and notifications for system health events'] },
+        ],
+      },
+      {
+        number: 3, name: 'Expert', slug: 'expert', duration: 5,
+        modules: [
+          { id: 'ADM-301', title: 'Advanced Telephony: IVR Design & Call Flows', duration: 60, contentTypes: ['VID', 'LAB', 'SCN'], primaryType: 'hands-on', objectives: ['Design multi-level IVR trees with conditional routing', 'Configure open/close calendars and holiday schedules', 'Set up call recording policies and compliance rules', 'Implement call queue management with overflow and failover'] },
+          { id: 'ADM-302', title: 'Rainbow Edge & Hybrid Administration', duration: 60, contentTypes: ['VID', 'LAB', 'REF'], primaryType: 'hands-on', objectives: ['Manage Rainbow Edge server configuration and updates', 'Monitor Edge server health and certificate management', 'Configure hybrid cloud/on-premises service distribution', 'Execute disaster recovery and service failover testing'] },
+          { id: 'ADM-303', title: 'Compliance, Data Sovereignty & Audit Readiness', duration: 45, contentTypes: ['VID', 'CAS', 'REF'], primaryType: 'case-based', objectives: ['Configure data residency settings for GDPR and HDS compliance', 'Prepare for IT security audits with Rainbow documentation', 'Manage data export requests and right-to-erasure workflows', 'Configure content retention and legal hold policies'] },
+          { id: 'ADM-304', title: 'Bulk Operations & CLI Automation', duration: 60, contentTypes: ['VID', 'LAB', 'QIZ'], primaryType: 'hands-on', objectives: ['Use Rainbow CLI for scripted bulk user operations', 'Automate recurring admin tasks using scheduled scripts', 'Build provisioning workflows for onboarding and offboarding', 'Integrate Rainbow admin operations with ITSM tools'] },
+          { id: 'ADM-305', title: 'Network Requirements & Quality of Service', duration: 45, contentTypes: ['VID', 'SCN', 'REF'], primaryType: 'scenario', objectives: ['Define and validate network requirements for Rainbow', 'Configure QoS policies for voice/video priority', 'Diagnose call quality issues using MOS, jitter, and packet loss', 'Plan network changes for Rainbow rollout to new sites'] },
+        ],
+      },
+      {
+        number: 4, name: 'Champion', slug: 'champion', duration: 4,
+        modules: [
+          { id: 'ADM-401', title: 'Multi-Site & Enterprise-Scale Administration', duration: 60, contentTypes: ['VID', 'CAS', 'SCN'], primaryType: 'case-based', objectives: ['Design admin delegation models for multi-site organizations', 'Manage multi-company structures with shared services', 'Plan and execute site-by-site rollouts with staged configs', 'Build operational runbooks for large-scale administration'] },
+          { id: 'ADM-402', title: 'Adoption, Change Management & End-User Enablement', duration: 45, contentTypes: ['VID', 'CAS', 'REF'], primaryType: 'case-based', objectives: ['Design end-user training and communication plans', 'Monitor adoption metrics and identify low-engagement departments', 'Create self-service help resources and internal FAQs', 'Manage change from pilot to full deployment'] },
+          { id: 'ADM-403', title: 'Capacity Planning, Optimization & Lifecycle Management', duration: 45, contentTypes: ['VID', 'SCN', 'REF'], primaryType: 'scenario', objectives: ['Analyze usage trends to forecast license and capacity needs', 'Optimize license allocation by matching tier to user behavior', 'Plan Rainbow version upgrades and feature rollouts', 'Build an annual admin operations calendar'] },
+          { id: 'ADM-404', title: 'Certification Assessment', duration: 30, contentTypes: ['ASM'], primaryType: 'assessment', objectives: ['Demonstrate comprehensive Rainbow administration expertise', 'Pass the Rainbow Administrator Champion certification exam'] },
+        ],
+      },
+    ],
+  },
 ]

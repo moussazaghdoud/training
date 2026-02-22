@@ -13,6 +13,8 @@ export function loadModuleContent(moduleId: string): string | null {
     EXEC: 'executives',
     PTR: 'partners',
     DEV: 'developers',
+    SLS: 'sales',
+    ADM: 'administrators',
   }
 
   const prefix = moduleId.split('-')[0]
@@ -49,7 +51,7 @@ export function loadModuleContent(moduleId: string): string | null {
         const startIdx = match.index
         // Find next module header or end
         const rest = content.slice(startIdx + match[0].length)
-        const nextModule = rest.match(/\n#{1,4}\s*(?:\*\*)?(?:SUP|CS|EXEC|PTR|DEV)-\d{3}/i)
+        const nextModule = rest.match(/\n#{1,4}\s*(?:\*\*)?(?:SUP|CS|EXEC|PTR|DEV|SLS|ADM)-\d{3}/i)
         const endIdx = nextModule?.index
           ? startIdx + match[0].length + nextModule.index
           : content.length
@@ -71,6 +73,8 @@ export function loadAssessmentContent(trackSlug: string): string | null {
     executives: 'executive-silver-assessment',
     partners: 'partner-silver-assessment',
     developers: 'developer-silver-assessment',
+    sales: 'sales-silver-assessment',
+    administrators: 'admin-silver-assessment',
   }
 
   const filename = slugMap[trackSlug]
