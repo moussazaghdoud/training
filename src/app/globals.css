@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --rainbow-primary: #6366f1;
+    --rainbow-secondary: #8b5cf6;
+    --rainbow-accent: #06b6d4;
+    --rainbow-dark: #0f172a;
+    --track-support: #2196F3;
+    --track-cs: #4CAF50;
+    --track-executive: #9C27B0;
+    --track-partner: #FF9800;
+    --track-developer: #607D8B;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent;
+  }
+
+  .track-card {
+    @apply relative overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl cursor-pointer;
+  }
+
+  .badge-silver {
+    @apply bg-gradient-to-br from-gray-300 to-gray-400 text-gray-800;
+  }
+
+  .badge-gold {
+    @apply bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900;
+  }
+
+  .badge-platinum {
+    @apply bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700;
+  }
+
+  .progress-bar {
+    @apply h-2 rounded-full bg-slate-200 overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-500 ease-out;
+  }
+}
